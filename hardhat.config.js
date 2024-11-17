@@ -1,5 +1,7 @@
 require("@nomicfoundation/hardhat-toolbox");
 require("@chainlink/env-enc").config();
+require("./tasks/deploy-fundme");
+require("./tasks/interact-fundme");
 
 //https://github.com/smartcontractkit/full-blockchain-solidity-course-js/discussions/2247#discussioncomment-5496669
 const { ProxyAgent, setGlobalDispatcher } = require("undici");
